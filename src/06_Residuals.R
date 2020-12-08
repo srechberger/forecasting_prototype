@@ -41,3 +41,7 @@ ggAcf(sres) + ggtitle("ACF of residuals")
 checkresiduals(naive(tsCsvMonth))
 checkresiduals(snaive(tsCsvMonth))
 
+############################################################
+############### Remove Data Objects ########################
+############################################################
+rm(month, res, sres, tsCsvMonth)
