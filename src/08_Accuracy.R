@@ -33,9 +33,9 @@ autoplot(tsCsvMonth) +
   autolayer(naiveForecast, series="Naive", PI=FALSE, showgap=TRUE) +
   autolayer(snaiveForecast, series="Seasonal naive", PI=FALSE, showgap=TRUE) +
   autolayer(naiveDriftForecast, series="Drift naive", PI=FALSE, showgap=TRUE) +
-  ggtitle("Method Comparison") +
-  xlab("Year") + ylab("Sales") +
-  guides(colour=guide_legend(title="Forecast"))
+  ggtitle("Methoden-Vergleich") +
+  xlab("Jahre") + ylab("Absatzmenge") +
+  guides(colour=guide_legend(title="Methode"))
 
 # check accuracy
 accuracy(meanForecast, test)
