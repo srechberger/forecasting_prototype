@@ -37,6 +37,7 @@ autoplot(tsCsvMonth) +
   xlab("Jahre") + ylab("Absatzmenge") +
   guides(colour=guide_legend(title="Methode"))
 
+
 # check accuracy
 accuracy(meanForecast, test)
 accuracy(naiveForecast, test)
